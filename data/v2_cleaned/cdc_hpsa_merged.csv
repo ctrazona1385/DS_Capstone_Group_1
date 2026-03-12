@@ -1802,7 +1802,7 @@ NAME,median_household_income,health_insurance_total,total_population,state,count
 "Cibola County, New Mexico",50759,25412,26845,35,6,35006,21.0,7.0,27.6,1.0
 "Colfax County, New Mexico",53554,11674,12322,35,7,35007,19.0,1.0,16.9,1.0
 "Curry County, New Mexico",57309,43570,47638,35,9,35009,18.0,1.0,20.8,1.0
-"De Baca County, New Mexico",-666666666,1562,1576,35,11,35011,19.0,2.0,20.5,1.0
+"De Baca County, New Mexico",32810,1562,1576,35,11,35011,19.0,2.0,20.5,1.0
 "Doña Ana County, New Mexico",56848,220768,224266,35,13,35013,21.0,3.0,,1.0
 "Eddy County, New Mexico",78426,60429,61105,35,15,35015,17.0,2.0,12.4,1.0
 "Grant County, New Mexico",44958,27324,27775,35,17,35017,18.0,1.0,19.5,1.0
