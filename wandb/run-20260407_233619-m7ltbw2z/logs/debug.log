@@ -1,0 +1,10 @@
+2026-04-07 23:36:19,581 INFO    MainThread:16152 [wandb_setup.py:_flush():81] Current SDK version is 0.25.1
+2026-04-07 23:36:19,583 INFO    MainThread:16152 [wandb_setup.py:_flush():81] Configure stats pid to 16152
+2026-04-07 23:36:19,583 INFO    MainThread:16152 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-04-07 23:36:19,583 INFO    MainThread:16152 [wandb_init.py:setup_run_log_directory():717] Logging user logs to c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260407_233619-m7ltbw2z\logs\debug.log
+2026-04-07 23:36:19,583 INFO    MainThread:16152 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260407_233619-m7ltbw2z\logs\debug-internal.log
+2026-04-07 23:36:19,583 INFO    MainThread:16152 [wandb_init.py:monkeypatch_ipython():636] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x00000165B30C1C90>
+2026-04-07 23:36:19,583 INFO    MainThread:16152 [wandb_init.py:init():844] calling init triggers
+2026-04-07 23:36:19,583 INFO    MainThread:16152 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'model_type': 'LinearRegression', '_wandb': {}}
+2026-04-07 23:36:19,583 INFO    MainThread:16152 [wandb_init.py:init():892] starting backend

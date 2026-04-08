@@ -1,0 +1,6 @@
+2026-04-07 23:38:16,070 INFO    MainThread:16152 [wandb_init.py:setup_run_log_directory():717] Logging user logs to c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260407_233816-egx7qm0w\logs\debug.log
+2026-04-07 23:38:16,070 INFO    MainThread:16152 [wandb_init.py:setup_run_log_directory():718] Logging internal logs to c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260407_233816-egx7qm0w\logs\debug-internal.log
+2026-04-07 23:38:16,070 INFO    MainThread:16152 [wandb_init.py:init():844] calling init triggers
+2026-04-07 23:38:16,070 INFO    MainThread:16152 [wandb_init.py:init():849] wandb.init called with sweep_config: {}
+config: {'model_type': 'LinearRegression', '_wandb': {}}
+2026-04-07 23:38:16,070 INFO    MainThread:16152 [wandb_init.py:init():892] starting backend
