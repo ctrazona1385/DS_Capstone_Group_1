@@ -1,0 +1,41 @@
+2026-04-09 15:00:28,302 INFO    MainThread:24584 [wandb_setup.py:_flush():76] Current SDK version is 0.16.6
+2026-04-09 15:00:28,304 INFO    MainThread:24584 [wandb_setup.py:_flush():76] Configure stats pid to 24584
+2026-04-09 15:00:28,304 INFO    MainThread:24584 [wandb_setup.py:_flush():76] Loading settings from C:\Users\17063\.config\wandb\settings
+2026-04-09 15:00:28,304 INFO    MainThread:24584 [wandb_setup.py:_flush():76] Loading settings from c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\settings
+2026-04-09 15:00:28,304 INFO    MainThread:24584 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'start_method': 'thread'}
+2026-04-09 15:00:28,304 INFO    MainThread:24584 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2026-04-09 15:00:28,304 INFO    MainThread:24584 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2026-04-09 15:00:28,304 INFO    MainThread:24584 [wandb_setup.py:_flush():76] Applying login settings: {}
+2026-04-09 15:00:28,304 INFO    MainThread:24584 [wandb_init.py:_log_setup():521] Logging user logs to c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_150028-nfgfrtvl\logs\debug.log
+2026-04-09 15:00:28,305 INFO    MainThread:24584 [wandb_init.py:_log_setup():522] Logging internal logs to c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_150028-nfgfrtvl\logs\debug-internal.log
+2026-04-09 15:00:28,305 INFO    MainThread:24584 [wandb_init.py:_jupyter_setup():467] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001FF72CD4510>
+2026-04-09 15:00:28,305 INFO    MainThread:24584 [wandb_init.py:init():561] calling init triggers
+2026-04-09 15:00:28,305 INFO    MainThread:24584 [wandb_init.py:init():568] wandb.init called with sweep_config: {}
+config: {'model_type': 'GradientBoostingClassifier_v2', 'n_estimators': 100, 'max_depth': 3, 'learning_rate': 0.05}
+2026-04-09 15:00:28,305 INFO    MainThread:24584 [wandb_init.py:init():611] starting backend
+2026-04-09 15:00:28,305 INFO    MainThread:24584 [wandb_init.py:init():615] setting up manager
+2026-04-09 15:00:28,307 INFO    MainThread:24584 [wandb_init.py:init():623] backend started and connected
+2026-04-09 15:00:28,319 INFO    MainThread:24584 [wandb_run.py:_label_probe_notebook():1299] probe notebook
+2026-04-09 15:00:28,320 INFO    MainThread:24584 [wandb_run.py:_label_probe_notebook():1309] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2026-04-09 15:00:28,320 INFO    MainThread:24584 [wandb_init.py:init():715] updated telemetry
+2026-04-09 15:00:28,374 INFO    MainThread:24584 [wandb_init.py:init():748] communicating run to backend with 90.0 second timeout
+2026-04-09 15:00:29,161 INFO    MainThread:24584 [wandb_run.py:_on_init():2357] communicating current version
+2026-04-09 15:00:29,840 INFO    MainThread:24584 [wandb_run.py:_on_init():2366] got version response upgrade_message: "wandb version 0.25.1 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2026-04-09 15:00:29,840 INFO    MainThread:24584 [wandb_init.py:init():799] starting run threads in backend
+2026-04-09 15:00:39,779 INFO    MainThread:24584 [wandb_run.py:_console_start():2335] atexit reg
+2026-04-09 15:00:39,779 INFO    MainThread:24584 [wandb_run.py:_redirect():2190] redirect: wrap_raw
+2026-04-09 15:00:39,779 INFO    MainThread:24584 [wandb_run.py:_redirect():2255] Wrapping output streams.
+2026-04-09 15:00:39,779 INFO    MainThread:24584 [wandb_run.py:_redirect():2280] Redirects installed.
+2026-04-09 15:00:39,780 INFO    MainThread:24584 [wandb_init.py:init():842] run started, returning control to user process
+2026-04-09 15:00:39,886 INFO    MainThread:24584 [wandb_run.py:_config_callback():1347] config_cb ('_wandb', 'visualize', 'roc_curve') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/area-under-curve/v0', 'fieldSettings': {'x': 'fpr', 'y': 'tpr', 'class': 'class'}, 'stringSettings': {'title': 'ROC — GB v2 n_est=100 depth=3 lr=0.05', 'x-axis-title': 'False positive rate', 'y-axis-title': 'True positive rate'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'roc_curve_table'}], 'fields': []}]}]}}} None
+2026-04-09 15:00:40,920 INFO    MainThread:24584 [wandb_run.py:_finish():2064] finishing run mmcgee18-georgia-state-university/hpsa-classification/nfgfrtvl
+2026-04-09 15:00:40,920 INFO    MainThread:24584 [jupyter.py:save_history():445] not saving jupyter history
+2026-04-09 15:00:40,920 INFO    MainThread:24584 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2026-04-09 15:00:40,920 INFO    MainThread:24584 [wandb_init.py:_jupyter_teardown():449] cleaning up jupyter logic
+2026-04-09 15:00:40,920 INFO    MainThread:24584 [wandb_run.py:_atexit_cleanup():2304] got exitcode: 0
+2026-04-09 15:00:40,920 INFO    MainThread:24584 [wandb_run.py:_restore():2287] restore
+2026-04-09 15:00:40,920 INFO    MainThread:24584 [wandb_run.py:_restore():2293] restore done
+2026-04-09 15:00:45,836 INFO    MainThread:24584 [wandb_run.py:_footer_history_summary_info():3936] rendering history
+2026-04-09 15:00:45,836 INFO    MainThread:24584 [wandb_run.py:_footer_history_summary_info():3968] rendering summary
+2026-04-09 15:00:45,845 INFO    MainThread:24584 [wandb_run.py:_footer_sync_info():3895] logging synced files

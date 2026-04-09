@@ -1,0 +1,1 @@
+{"columns": ["class", "fpr", "tpr"], "data": [["not_high_need", 0.0, 0.0], ["not_high_need", 0.148, 0.164], ["not_high_need", 1.0, 1.0], ["high_need", 0.0, 0.0], ["high_need", 0.836, 0.852], ["high_need", 1.0, 1.0]]}

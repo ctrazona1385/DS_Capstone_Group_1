@@ -1,0 +1,1 @@
+{"n_estimators": 461, "max_depth": 8, "learning_rate": 0.04496258187518884, "subsample": 0.7955368387886596, "colsample_bytree": 0.9924340444486708, "min_child_weight": 6, "gamma": 0.03986102597427693, "roc_auc": 0.9993734729194491, "_timestamp": 1775765128.3765266, "_runtime": 420.32141065597534, "_step": 99, "_wandb": {"runtime": 418}}

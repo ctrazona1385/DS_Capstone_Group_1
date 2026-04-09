@@ -1,0 +1,44 @@
+{
+    "os": "Windows-10-10.0.26200-SP0",
+    "python": "3.11.7",
+    "heartbeatAt": "2026-04-09T19:05:53.316225",
+    "startedAt": "2026-04-09T19:05:51.181795",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/ctrazona1385/DS_Capstone_Group_1.git",
+        "commit": "9bbbaf67f2bbe57b45b6b1e003a9b1b781baef80"
+    },
+    "email": "ctrazona1385@gmail.com",
+    "root": "C:/Users/17063/OneDrive/Documents/GitHub/DS_Capstone_Group_1",
+    "host": "CJsLaptop",
+    "username": "17063",
+    "executable": "c:\\Users\\17063\\anaconda3\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2918.0,
+        "min": 0.0,
+        "max": 2918.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2918.0,
+            "min": 0.0,
+            "max": 2918.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 458.37304306030273,
+            "used": 284.01110076904297
+        }
+    },
+    "memory": {
+        "total": 15.744903564453125
+    }
+}

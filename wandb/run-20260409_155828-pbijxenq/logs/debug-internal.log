@@ -1,0 +1,957 @@
+2026-04-09 15:58:28,056 INFO    StreamThr :1936 [internal.py:wandb_internal():86] W&B internal server running at pid: 1936, started at: 2026-04-09 15:58:28.055116
+2026-04-09 15:58:28,057 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status
+2026-04-09 15:58:28,066 INFO    WriterThread:1936 [datastore.py:open_for_write():87] open: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\run-pbijxenq.wandb
+2026-04-09 15:58:28,066 DEBUG   SenderThread:1936 [sender.py:send():379] send: header
+2026-04-09 15:58:28,119 DEBUG   SenderThread:1936 [sender.py:send():379] send: run
+2026-04-09 15:58:28,876 INFO    SenderThread:1936 [dir_watcher.py:__init__():211] watching files in: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files
+2026-04-09 15:58:28,876 INFO    SenderThread:1936 [sender.py:_start_run_threads():1124] run started: pbijxenq with start time 1775764708.055116
+2026-04-09 15:58:28,898 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: check_version
+2026-04-09 15:58:28,898 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: check_version
+2026-04-09 15:58:29,675 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: run_start
+2026-04-09 15:58:29,683 DEBUG   HandlerThread:1936 [system_info.py:__init__():26] System info init
+2026-04-09 15:58:29,683 DEBUG   HandlerThread:1936 [system_info.py:__init__():41] System info init done
+2026-04-09 15:58:29,684 INFO    HandlerThread:1936 [system_monitor.py:start():194] Starting system monitor
+2026-04-09 15:58:29,685 INFO    SystemMonitor:1936 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2026-04-09 15:58:29,685 INFO    HandlerThread:1936 [system_monitor.py:probe():214] Collecting system info
+2026-04-09 15:58:29,689 INFO    SystemMonitor:1936 [interfaces.py:start():190] Started cpu monitoring
+2026-04-09 15:58:29,690 DEBUG   HandlerThread:1936 [system_info.py:probe():150] Probing system
+2026-04-09 15:58:29,690 INFO    SystemMonitor:1936 [interfaces.py:start():190] Started disk monitoring
+2026-04-09 15:58:29,691 INFO    SystemMonitor:1936 [interfaces.py:start():190] Started memory monitoring
+2026-04-09 15:58:29,700 INFO    SystemMonitor:1936 [interfaces.py:start():190] Started network monitoring
+2026-04-09 15:58:29,701 DEBUG   HandlerThread:1936 [system_info.py:_probe_git():135] Probing git
+2026-04-09 15:58:29,809 DEBUG   HandlerThread:1936 [system_info.py:_probe_git():143] Probing git done
+2026-04-09 15:58:29,809 DEBUG   HandlerThread:1936 [system_info.py:probe():198] Probing system done
+2026-04-09 15:58:29,809 DEBUG   HandlerThread:1936 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.26200-SP0', 'python': '3.11.7', 'heartbeatAt': '2026-04-09T19:58:29.690772', 'startedAt': '2026-04-09T19:58:28.044759', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/ctrazona1385/DS_Capstone_Group_1.git', 'commit': '9bbbaf67f2bbe57b45b6b1e003a9b1b781baef80'}, 'email': 'ctrazona1385@gmail.com', 'root': 'C:/Users/17063/OneDrive/Documents/GitHub/DS_Capstone_Group_1', 'host': 'CJsLaptop', 'username': '17063', 'executable': 'c:\\Users\\17063\\anaconda3\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2918.0, 'min': 0.0, 'max': 2918.0}, 'cpu_freq_per_core': [{'current': 2918.0, 'min': 0.0, 'max': 2918.0}], 'disk': {'/': {'total': 458.37304306030273, 'used': 284.91423416137695}}, 'memory': {'total': 15.744903564453125}}
+2026-04-09 15:58:29,809 INFO    HandlerThread:1936 [system_monitor.py:probe():224] Finished collecting system info
+2026-04-09 15:58:29,809 INFO    HandlerThread:1936 [system_monitor.py:probe():227] Publishing system info
+2026-04-09 15:58:29,809 DEBUG   HandlerThread:1936 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2026-04-09 15:58:29,893 INFO    Thread-706:1936 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\conda-environment.yaml
+2026-04-09 15:58:38,714 DEBUG   HandlerThread:1936 [system_info.py:_save_conda():222] Saving conda packages done
+2026-04-09 15:58:38,722 INFO    HandlerThread:1936 [system_monitor.py:probe():229] Finished publishing system info
+2026-04-09 15:58:38,722 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:58:38,722 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: keepalive
+2026-04-09 15:58:38,722 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:58:38,722 DEBUG   SenderThread:1936 [sender.py:send():379] send: files
+2026-04-09 15:58:38,722 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2026-04-09 15:58:38,926 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\conda-environment.yaml
+2026-04-09 15:58:38,926 INFO    Thread-706:1936 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-metadata.json
+2026-04-09 15:58:39,296 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: python_packages
+2026-04-09 15:58:39,298 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: python_packages
+2026-04-09 15:58:39,298 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 15:58:39,298 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 15:58:39,300 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 15:58:39,414 DEBUG   SenderThread:1936 [sender.py:send():379] send: telemetry
+2026-04-09 15:58:39,651 INFO    wandb-upload_0:1936 [upload_job.py:push():131] Uploaded file C:\Users\17063\AppData\Local\Temp\tmpdld1btq8wandb\a4uk45mr-wandb-metadata.json
+2026-04-09 15:58:39,947 INFO    Thread-706:1936 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\requirements.txt
+2026-04-09 15:58:44,469 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:58:47,199 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:58:47,199 DEBUG   SenderThread:1936 [sender.py:send():379] send: telemetry
+2026-04-09 15:58:47,199 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:58:50,240 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:58:51,359 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:58:51,359 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:58:51,359 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:58:51,359 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:58:51,359 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:58:52,078 INFO    Thread-706:1936 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:58:54,292 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 15:58:54,292 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 15:58:54,308 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 15:58:55,490 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:58:55,576 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:58:55,576 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:58:55,576 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:58:55,576 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:58:55,576 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:58:56,109 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:58:59,964 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:58:59,964 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:58:59,964 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:58:59,968 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:58:59,969 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:00,142 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:00,980 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:59:02,161 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 15:59:03,121 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:03,126 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:03,126 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:03,128 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:03,129 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:03,175 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:06,936 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:06,941 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:06,941 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:06,942 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:59:06,942 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:06,946 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:07,211 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:09,302 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 15:59:09,302 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 15:59:09,319 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 15:59:09,898 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:09,915 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:09,916 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:09,918 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:09,918 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:10,270 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:11,943 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:59:12,524 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:12,526 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:12,526 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:12,528 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:12,528 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:13,292 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:15,154 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:15,157 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:15,158 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:15,158 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:15,158 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:15,325 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:17,177 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:59:18,469 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:18,469 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:18,469 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:18,469 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:18,469 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:19,373 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:19,936 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:19,936 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:19,936 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:19,941 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:19,941 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:20,379 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:21,251 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:21,251 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:21,253 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:21,254 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:21,254 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:21,391 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:22,257 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:59:22,514 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:22,514 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:22,514 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:22,514 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:22,514 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:23,408 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:24,307 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 15:59:24,307 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 15:59:24,308 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 15:59:24,655 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:24,656 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:24,656 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:24,658 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:24,658 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:25,424 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:26,807 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:26,808 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:26,808 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:26,809 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:26,809 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:27,456 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:27,825 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:59:28,470 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:28,470 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:28,472 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:28,473 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:28,474 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:29,473 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:29,708 DEBUG   SystemMonitor:1936 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2026-04-09 15:59:29,710 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 15:59:29,962 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:29,964 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:29,965 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:29,967 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:29,967 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:30,491 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:32,978 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:59:33,541 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 15:59:33,692 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:33,692 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:33,692 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:33,692 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:33,692 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:34,568 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:35,808 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:35,808 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:35,808 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:35,808 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:35,816 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:36,590 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:38,314 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:38,314 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:38,314 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:38,314 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:59:38,314 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:38,314 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:38,613 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:39,325 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 15:59:39,341 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 15:59:39,341 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 15:59:40,195 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:40,197 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:40,197 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:40,197 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:40,197 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:40,640 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:41,857 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:41,857 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:41,857 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:41,857 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:41,857 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:42,688 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:43,873 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:59:44,045 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:44,045 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:44,045 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:44,045 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:44,045 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:44,701 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:48,493 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:48,494 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:48,495 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:48,497 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:48,497 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:48,770 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:49,509 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:59:53,964 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:53,966 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:53,966 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:53,968 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:53,968 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:54,338 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 15:59:54,356 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 15:59:54,356 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 15:59:54,883 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:55,465 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 15:59:57,097 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 15:59:57,099 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 15:59:57,099 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 15:59:57,101 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 15:59:57,101 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 15:59:57,937 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 15:59:59,712 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:00:00,360 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:00,360 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:00,360 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:00,360 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:00,360 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:01,001 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:01,380 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:00:03,342 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:03,342 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:03,342 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:03,342 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:03,348 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:04,048 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:05,218 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:05,218 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:05,218 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:05,220 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:05,220 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:06,067 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:07,252 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:00:08,130 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:00:08,635 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:08,635 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:08,635 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:08,635 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:08,635 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:09,153 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:09,344 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:00:09,360 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:00:09,360 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:00:10,797 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:10,797 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:10,797 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:10,797 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:10,806 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:11,178 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:12,815 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:00:14,700 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:14,702 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:14,702 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:14,704 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:14,704 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:15,287 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:18,738 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:00:20,049 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:20,051 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:20,051 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:20,053 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:20,053 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:20,461 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:24,083 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:00:24,359 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:00:24,389 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:00:24,390 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:00:24,454 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:24,620 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:24,620 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:24,625 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:24,626 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:25,559 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:28,547 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:28,549 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:28,549 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:28,549 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:28,551 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:28,587 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:29,554 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:00:29,713 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:00:33,286 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:33,286 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:33,286 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:33,288 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:33,289 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:33,659 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:35,295 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:00:37,259 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:37,259 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:37,259 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:37,261 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:37,261 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:37,706 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:39,361 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:00:39,422 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:00:39,422 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:00:40,559 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:00:40,734 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:00:41,618 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:41,621 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:41,622 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:41,623 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:41,623 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:41,799 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:45,862 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:45,862 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:45,862 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:45,862 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:00:45,862 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:45,862 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:46,840 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:50,259 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:50,259 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:50,259 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:50,259 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:50,259 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:50,911 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:51,276 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:00:54,372 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:00:54,439 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:00:54,439 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:00:54,443 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:54,516 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:54,518 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:54,519 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:54,519 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:54,990 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:56,534 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:00:58,477 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:00:58,477 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:00:58,477 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:00:58,479 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:00:58,479 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:00:59,048 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:00:59,726 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:01:01,742 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:01:02,562 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:02,562 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:02,562 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:02,562 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:02,562 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:03,093 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:06,629 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:06,629 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:06,629 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:06,629 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:06,629 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:07,146 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:07,638 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:01:09,387 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:01:09,443 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:01:09,443 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:01:09,455 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:09,538 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:09,538 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:09,540 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:09,540 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:10,198 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:13,568 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:01:14,227 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:01:14,537 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:14,537 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:14,537 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:14,542 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:14,544 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:15,241 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:19,397 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:19,397 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:19,397 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:19,397 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:01:19,397 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:19,397 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:20,402 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:24,298 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:24,298 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:24,298 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:24,298 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:24,298 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:24,389 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:01:24,452 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:01:24,453 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:01:24,456 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:24,594 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:01:28,294 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:28,299 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:28,299 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:28,303 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:28,305 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:28,506 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:29,739 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:01:29,739 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:01:32,982 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:32,986 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:32,986 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:32,990 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:32,990 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:33,541 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:35,002 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:01:36,550 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:36,569 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:36,569 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:36,569 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:36,569 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:36,569 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:39,405 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:01:39,443 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:01:39,443 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:01:40,480 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:40,480 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:40,480 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:40,480 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:01:40,486 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:40,486 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:40,620 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:44,752 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:44,752 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:44,752 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:44,752 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:44,752 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:45,657 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:45,774 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:01:46,688 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:01:49,604 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:49,604 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:49,604 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:49,604 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:49,604 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:49,707 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:51,622 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:01:54,004 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:54,005 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:54,006 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:54,010 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:54,010 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:54,418 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:01:54,441 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:01:54,441 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:01:54,762 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:57,571 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:01:58,172 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:01:58,176 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:01:58,176 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:01:58,176 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:01:58,176 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:01:58,798 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:01:59,740 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:02:01,829 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:01,829 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:01,829 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:01,829 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:01,829 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:02,837 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:02:02,837 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:06,182 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:06,186 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:06,186 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:06,186 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:06,186 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:06,858 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:08,207 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:02:09,424 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:02:09,440 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:02:09,441 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:02:10,733 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:10,733 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:10,733 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:10,733 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:10,742 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:10,883 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:13,547 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:13,552 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:13,553 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:13,553 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:02:13,556 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:13,557 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:13,890 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:17,706 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:17,706 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:17,706 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:17,714 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:17,714 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:17,922 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:18,722 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:02:18,924 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:02:22,829 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:22,831 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:22,831 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:22,833 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:22,834 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:22,972 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:24,429 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:02:24,430 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:02:24,441 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:02:24,442 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:02:29,681 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:02:29,743 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:02:29,825 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:29,826 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:29,827 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:29,830 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:29,830 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:30,070 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:34,875 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:02:36,195 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:36,197 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:36,197 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:36,198 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:36,199 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:37,131 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:39,441 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:02:39,441 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:02:39,441 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:02:40,581 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:02:42,118 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:42,120 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:42,121 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:42,127 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:42,130 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:42,173 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:46,143 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:02:47,596 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:47,598 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:47,598 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:47,601 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:47,603 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:48,208 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:51,638 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:02:52,255 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:02:53,108 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:53,110 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:53,110 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:53,115 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:53,116 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:53,267 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:54,440 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:02:54,440 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:02:54,440 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:02:57,579 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:02:58,031 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:02:58,034 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:02:58,034 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:02:58,036 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:02:58,037 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:02:58,294 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:02:59,748 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:03:02,771 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:03:03,707 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:03,709 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:03,709 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:03,714 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:03,715 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:04,353 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:07,691 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:07,692 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:07,693 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:07,696 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:07,697 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:08,393 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:08,704 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:03:09,433 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:03:09,434 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:03:09,450 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:03:12,608 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:12,610 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:12,610 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:12,612 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:12,613 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:13,469 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:14,625 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:03:17,959 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:17,959 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:17,959 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:17,959 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:17,959 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:18,527 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:19,984 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:03:22,340 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:22,341 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:22,343 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:22,345 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:22,346 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:22,557 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:24,451 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:03:24,451 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:03:24,464 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:03:25,552 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:03:26,586 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:03:26,819 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:26,819 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:26,819 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:26,819 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:26,819 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:27,603 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:29,752 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:03:30,769 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:03:31,372 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:31,374 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:31,375 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:31,377 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:31,378 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:31,635 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:36,401 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:03:37,061 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:37,062 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:37,063 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:37,066 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:37,067 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:37,663 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:39,452 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:03:39,452 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:03:39,467 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:03:41,586 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:03:43,486 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:43,486 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:43,486 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:43,486 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:43,486 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:43,707 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:47,519 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:03:48,358 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:48,359 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:48,359 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:48,362 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:48,364 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:48,768 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:53,300 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:53,302 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:53,303 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:53,303 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:03:53,305 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:53,306 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:53,837 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:54,451 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:03:54,454 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:03:54,469 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:03:58,022 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:03:58,024 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:03:58,025 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:03:58,028 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:03:58,029 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:03:58,887 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:03:59,039 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:03:59,754 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:03:59,905 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:04:02,227 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:02,228 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:02,228 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:02,230 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:02,231 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:02,921 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:04,237 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:04:07,021 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:07,022 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:07,023 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:07,023 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:07,025 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:07,996 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:09,466 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:04:09,467 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:04:09,483 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:04:09,628 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:04:10,687 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:10,688 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:10,689 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:10,690 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:10,690 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:11,021 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:14,333 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:14,333 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:14,333 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:14,333 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:14,333 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:15,057 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:15,349 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:04:18,241 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:18,241 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:18,241 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:18,243 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:18,243 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:19,101 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:21,258 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:04:22,204 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:22,206 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:22,206 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:22,206 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:22,206 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:23,152 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:24,477 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:04:24,477 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:04:24,500 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:04:26,062 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:26,067 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:26,067 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:26,067 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:26,067 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:26,182 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:27,081 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:04:29,776 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:04:30,070 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:30,070 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:30,070 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:30,070 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:30,070 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:30,225 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:32,089 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:04:32,235 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:04:34,619 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:34,619 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:34,619 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:34,619 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:34,619 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:35,267 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:37,667 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:04:38,521 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:38,523 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:38,523 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:38,525 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:38,525 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:39,318 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:39,481 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:04:39,483 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:04:39,518 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:04:42,684 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:04:43,673 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:43,675 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:43,675 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:43,675 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:43,677 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:44,350 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:47,715 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:04:49,382 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:49,382 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:49,382 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:49,382 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:49,382 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:49,415 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:53,455 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:04:54,507 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:04:54,507 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:04:54,532 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:04:55,049 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:55,049 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:55,049 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:55,049 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:55,049 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:55,503 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:04:59,106 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:04:59,688 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:04:59,688 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:04:59,690 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:04:59,690 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:04:59,692 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:04:59,786 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:05:00,565 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:05:04,461 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:05:04,461 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:05:04,465 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:05:04,598 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:05:04,600 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:05:04,600 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:05:04,623 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:05:04,623 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:05:09,319 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:05:09,321 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:05:09,323 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:05:09,325 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:05:09,327 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:05:09,519 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:05:09,519 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:05:09,535 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:05:09,729 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:05:09,731 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:05:14,435 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:05:14,435 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:05:14,435 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:05:14,441 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:05:14,441 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:05:14,821 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:05:15,441 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:05:18,719 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:05:18,724 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:05:18,724 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:05:18,724 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:05:18,724 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:05:18,851 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:05:20,746 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:05:23,951 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:05:23,951 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:05:23,951 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:05:23,951 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:05:23,951 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:05:24,521 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-09 16:05:24,523 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: stop_status
+2026-04-09 16:05:24,541 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:05:24,925 INFO    Thread-706:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:05:26,631 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:05:28,376 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-09 16:05:28,376 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:05:28,376 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send():379] send: config
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send():379] send: telemetry
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send():379] send: exit
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:send_exit():586] handling exit code: 0
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:send_exit():588] handling runtime: 418
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:send_exit():594] send defer
+2026-04-09 16:05:28,381 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 0
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 0
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 1
+2026-04-09 16:05:28,381 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 1
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 1
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 2
+2026-04-09 16:05:28,381 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 2
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [system_monitor.py:finish():203] Stopping system monitor
+2026-04-09 16:05:28,381 DEBUG   SystemMonitor:1936 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [interfaces.py:finish():202] Joined cpu monitor
+2026-04-09 16:05:28,381 DEBUG   SystemMonitor:1936 [system_monitor.py:_start():183] Publishing last batch of metrics
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [interfaces.py:finish():202] Joined disk monitor
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [interfaces.py:finish():202] Joined memory monitor
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [interfaces.py:finish():202] Joined network monitor
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 2
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 3
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send():379] send: stats
+2026-04-09 16:05:28,381 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 3
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send():379] send: history
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: summary_record
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 3
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 4
+2026-04-09 16:05:28,381 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 4
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 4
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 5
+2026-04-09 16:05:28,381 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 5
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send():379] send: summary
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 5
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 6
+2026-04-09 16:05:28,381 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:28,381 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 6
+2026-04-09 16:05:28,381 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:28,381 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 6
+2026-04-09 16:05:28,397 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: status_report
+2026-04-09 16:05:28,518 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 7
+2026-04-09 16:05:28,518 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:28,518 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 7
+2026-04-09 16:05:28,518 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:28,518 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 7
+2026-04-09 16:05:28,518 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 8
+2026-04-09 16:05:28,518 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:28,518 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 8
+2026-04-09 16:05:28,518 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:28,518 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 8
+2026-04-09 16:05:28,518 INFO    SenderThread:1936 [job_builder.py:build():318] Attempting to build job artifact
+2026-04-09 16:05:28,518 INFO    SenderThread:1936 [job_builder.py:_get_source_type():455] is repo sourced job
+2026-04-09 16:05:28,518 INFO    SenderThread:1936 [job_builder.py:_get_program_relpath():473] run is notebook based run
+2026-04-09 16:05:28,518 WARNING SenderThread:1936 [job_builder.py:_log_if_verbose():210] Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
+2026-04-09 16:05:28,518 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 9
+2026-04-09 16:05:28,518 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:28,518 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 9
+2026-04-09 16:05:28,518 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:28,518 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 9
+2026-04-09 16:05:28,518 INFO    SenderThread:1936 [dir_watcher.py:finish():358] shutting down directory watcher
+2026-04-09 16:05:28,965 INFO    SenderThread:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:05:28,965 INFO    SenderThread:1936 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:05:28,965 INFO    SenderThread:1936 [dir_watcher.py:finish():388] scan: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files
+2026-04-09 16:05:28,965 INFO    SenderThread:1936 [dir_watcher.py:finish():402] scan save: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\conda-environment.yaml conda-environment.yaml
+2026-04-09 16:05:28,965 INFO    SenderThread:1936 [dir_watcher.py:finish():402] scan save: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml config.yaml
+2026-04-09 16:05:28,965 INFO    SenderThread:1936 [dir_watcher.py:finish():402] scan save: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\requirements.txt requirements.txt
+2026-04-09 16:05:28,965 INFO    SenderThread:1936 [dir_watcher.py:finish():402] scan save: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-metadata.json wandb-metadata.json
+2026-04-09 16:05:28,965 INFO    SenderThread:1936 [dir_watcher.py:finish():402] scan save: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json wandb-summary.json
+2026-04-09 16:05:28,965 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 10
+2026-04-09 16:05:28,965 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:28,965 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 10
+2026-04-09 16:05:28,965 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:28,981 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 10
+2026-04-09 16:05:28,981 INFO    SenderThread:1936 [file_pusher.py:finish():172] shutting down file pusher
+2026-04-09 16:05:29,380 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: poll_exit
+2026-04-09 16:05:29,380 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: poll_exit
+2026-04-09 16:05:30,314 INFO    wandb-upload_0:1936 [upload_job.py:push():131] Uploaded file c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\conda-environment.yaml
+2026-04-09 16:05:30,385 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: poll_exit
+2026-04-09 16:05:30,385 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: poll_exit
+2026-04-09 16:05:31,398 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: poll_exit
+2026-04-09 16:05:31,398 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: poll_exit
+2026-04-09 16:05:31,481 INFO    wandb-upload_3:1936 [upload_job.py:push():131] Uploaded file c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\wandb-summary.json
+2026-04-09 16:05:31,485 INFO    wandb-upload_2:1936 [upload_job.py:push():131] Uploaded file c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\requirements.txt
+2026-04-09 16:05:31,497 INFO    wandb-upload_1:1936 [upload_job.py:push():131] Uploaded file c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\files\config.yaml
+2026-04-09 16:05:31,713 INFO    Thread-705 (_thread_body):1936 [sender.py:transition_state():614] send defer: 11
+2026-04-09 16:05:31,713 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:31,714 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 11
+2026-04-09 16:05:31,714 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:31,714 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 11
+2026-04-09 16:05:31,714 INFO    SenderThread:1936 [file_pusher.py:join():178] waiting for file pusher
+2026-04-09 16:05:31,715 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 12
+2026-04-09 16:05:31,715 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:31,715 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 12
+2026-04-09 16:05:31,715 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:31,715 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 12
+2026-04-09 16:05:31,715 INFO    SenderThread:1936 [file_stream.py:finish():614] file stream finish called
+2026-04-09 16:05:32,215 INFO    SenderThread:1936 [file_stream.py:finish():618] file stream finish is done
+2026-04-09 16:05:32,215 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 13
+2026-04-09 16:05:32,215 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:32,215 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 13
+2026-04-09 16:05:32,215 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:32,215 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 13
+2026-04-09 16:05:32,215 INFO    SenderThread:1936 [sender.py:transition_state():614] send defer: 14
+2026-04-09 16:05:32,215 DEBUG   SenderThread:1936 [sender.py:send():379] send: final
+2026-04-09 16:05:32,215 DEBUG   SenderThread:1936 [sender.py:send():379] send: footer
+2026-04-09 16:05:32,215 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: defer
+2026-04-09 16:05:32,215 INFO    HandlerThread:1936 [handler.py:handle_request_defer():172] handle defer: 14
+2026-04-09 16:05:32,215 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: defer
+2026-04-09 16:05:32,215 INFO    SenderThread:1936 [sender.py:send_request_defer():610] handle sender defer: 14
+2026-04-09 16:05:32,231 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: poll_exit
+2026-04-09 16:05:32,231 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: poll_exit
+2026-04-09 16:05:32,231 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-09 16:05:32,231 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: server_info
+2026-04-09 16:05:32,231 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: get_summary
+2026-04-09 16:05:32,231 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: sampled_history
+2026-04-09 16:05:32,231 DEBUG   SenderThread:1936 [sender.py:send_request():406] send_request: server_info
+2026-04-09 16:05:32,314 DEBUG   HandlerThread:1936 [handler.py:handle_request():146] handle_request: shutdown
+2026-04-09 16:05:32,314 INFO    HandlerThread:1936 [handler.py:finish():866] shutting down handler
+2026-04-09 16:05:33,246 INFO    WriterThread:1936 [datastore.py:close():296] close: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260409_155828-pbijxenq\run-pbijxenq.wandb
+2026-04-09 16:05:33,314 INFO    SenderThread:1936 [sender.py:finish():1546] shutting down sender
+2026-04-09 16:05:33,314 INFO    SenderThread:1936 [file_pusher.py:finish():172] shutting down file pusher
+2026-04-09 16:05:33,314 INFO    SenderThread:1936 [file_pusher.py:join():178] waiting for file pusher
