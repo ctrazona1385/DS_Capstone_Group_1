@@ -6,9 +6,9 @@
 | Team Member | GitHub |
 |---|---|
 | Cyron Trazona | ctrazona1385 |
-| Liam Finn | |
-| Aidan Moore | |
-| Matthew McGee | |
+| Liam Finn | lfinn582 |
+| Aidan Moore | aidanrmoore2 |
+| Matthew McGee | mmcgee18 |
 
 ---
 
@@ -16,7 +16,7 @@
 
 Access to primary care in the United States is increasingly stratified by geography and insurance status, leaving millions in **"care deserts"** — communities with few physicians, limited facilities, and high rates of uninsured residents.
 
-**Direct Primary Care (DPC)** clinics offer a promising alternative: low-cost, subscription-based primary care that operates independently of insurance. However, identifying where such clinics can realistically be established — and where they can remain financially viable while serving underserved populations — requires systematic, data-driven analysis that currently does not exist at scale.
+**Direct Primary Care (DPC)** clinics offer a promising alternative: low-cost, subscription-based primary care that operates independently of insurance. However, identifying where such clinics can realistically be established and where they can remain financially viable while serving underserved populations, requires systematic, data-driven analysis that currently does not exist at scale.
 
 **Care Optimize** develops a **composite location scoring model** to identify optimal sites for DPC clinic placement across U.S. counties, balancing community need with operational viability.
 
@@ -25,10 +25,11 @@ Access to primary care in the United States is increasingly stratified by geogra
 ## Objectives
 
 1. A reproducible data pipeline integrating health, geographic, and economic indicators at the census-tract level
-2. A machine learning classification model predicting healthcare need for non-HPSA-designated areas, enabling go/no-go recommendations for DPC clinic siting
+2. A machine learning classification model predicting healthcare need for non-HPSA-designated areas
 3. A probabilistic health impact simulation quantifying expected outcome improvements from clinic placement
 4. A financial viability model estimating revenue potential and operating costs by county
-
+5. A machine learning classification model that determines optimal placements for highest impact based on objectives 2 trough 4
+6. An interactive dashboard showing results of all models, filterable to individual model classifications
 ---
 
 ## Repository Navigation
@@ -154,9 +155,13 @@ Probabilistic estimation of health outcome improvements from DPC clinic placemen
 
 ### Financial Viability Model
 
-Revenue model benchmarked against Direct Primary Care Coalition cost benchmarks and HRSA Uniform Data System (UDS) data as a conservative upper bound. Produces go/no-go siting tiers:
+Revenue model benchmarked against Direct Primary Care Coalition cost benchmarks and HRSA Uniform Data System (UDS) data as a conservative upper bound. 
 
-| Tier | Label | Criteria |
+### Go/No Go Classifier Model
+
+Model enabling go/no go recommendations based on inputs from previous 3 models.
+
+| Tier | Label | Criteria | (TBD)
 |---|---|---|
 | Strong Go | High need + financially viable | HPSA high-need + positive revenue projection |
 | Conditional | Moderate need or viability | Requires further local assessment |
