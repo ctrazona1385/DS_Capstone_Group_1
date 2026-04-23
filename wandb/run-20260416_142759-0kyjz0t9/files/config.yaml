@@ -1,0 +1,105 @@
+wandb_version: 1
+
+n_estimators:
+  desc: null
+  value: 495
+max_depth:
+  desc: null
+  value: 10
+learning_rate:
+  desc: null
+  value: 0.2909576760717733
+subsample:
+  desc: null
+  value: 0.9904583029412303
+colsample_bytree:
+  desc: null
+  value: 0.8262801060921539
+min_child_weight:
+  desc: null
+  value: 3
+gamma:
+  desc: null
+  value: 0.013713261955734005
+reg_alpha:
+  desc: null
+  value: 0.962058314656758
+reg_lambda:
+  desc: null
+  value: 5.3023501553627446e-08
+model_type:
+  desc: null
+  value: XGBClassifier
+scale_pos_weight:
+  desc: null
+  value: 1.0
+imbalance:
+  desc: null
+  value: SMOTE
+_wandb:
+  desc: null
+  value:
+    python_version: 3.11.7
+    cli_version: 0.16.6
+    framework: xgboost
+    is_jupyter_run: true
+    is_kaggle_kernel: false
+    start_time: 1776364079.0
+    t:
+      1:
+      - 5
+      - 6
+      - 35
+      - 53
+      - 55
+      2:
+      - 5
+      - 6
+      - 35
+      - 53
+      - 55
+      3:
+      - 2
+      - 13
+      - 16
+      - 23
+      4: 3.11.7
+      5: 0.16.6
+      8:
+      - 1
+      - 3
+      - 8
+      13: windows-amd64
+    visualize:
+      roc_curve:
+        panel_type: Vega2
+        panel_config:
+          panelDefId: wandb/area-under-curve/v0
+          fieldSettings:
+            x: fpr
+            y: tpr
+            class: class
+          stringSettings:
+            title: ROC — xgboost_v3_smote
+            x-axis-title: False positive rate
+            y-axis-title: True positive rate
+          transform:
+            name: tableWithLeafColNames
+          userQuery:
+            queryFields:
+            - name: runSets
+              args:
+              - name: runSets
+                value: ${runSets}
+              fields:
+              - name: id
+                fields: []
+              - name: name
+                fields: []
+              - name: _defaultColorIndex
+                fields: []
+              - name: summaryTable
+                args:
+                - name: tableKey
+                  value: roc_curve_table
+                fields: []

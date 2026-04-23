@@ -1,0 +1,218 @@
+2026-04-16 13:22:26,416 INFO    StreamThr :35044 [internal.py:wandb_internal():86] W&B internal server running at pid: 35044, started at: 2026-04-16 13:22:26.412280
+2026-04-16 13:22:26,422 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: status
+2026-04-16 13:22:26,439 INFO    WriterThread:35044 [datastore.py:open_for_write():87] open: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\run-k3tr0ffl.wandb
+2026-04-16 13:22:26,440 DEBUG   SenderThread:35044 [sender.py:send():379] send: header
+2026-04-16 13:22:26,537 DEBUG   SenderThread:35044 [sender.py:send():379] send: run
+2026-04-16 13:22:28,465 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: check_version
+2026-04-16 13:22:28,465 INFO    SenderThread:35044 [dir_watcher.py:__init__():211] watching files in: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files
+2026-04-16 13:22:28,465 INFO    SenderThread:35044 [sender.py:_start_run_threads():1124] run started: k3tr0ffl with start time 1776360146.409269
+2026-04-16 13:22:28,467 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: check_version
+2026-04-16 13:22:30,120 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: run_start
+2026-04-16 13:22:30,145 DEBUG   HandlerThread:35044 [system_info.py:__init__():26] System info init
+2026-04-16 13:22:30,147 DEBUG   HandlerThread:35044 [system_info.py:__init__():41] System info init done
+2026-04-16 13:22:30,147 INFO    HandlerThread:35044 [system_monitor.py:start():194] Starting system monitor
+2026-04-16 13:22:30,147 INFO    SystemMonitor:35044 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2026-04-16 13:22:30,147 INFO    HandlerThread:35044 [system_monitor.py:probe():214] Collecting system info
+2026-04-16 13:22:30,161 INFO    SystemMonitor:35044 [interfaces.py:start():190] Started cpu monitoring
+2026-04-16 13:22:30,163 DEBUG   HandlerThread:35044 [system_info.py:probe():150] Probing system
+2026-04-16 13:22:30,163 INFO    SystemMonitor:35044 [interfaces.py:start():190] Started disk monitoring
+2026-04-16 13:22:30,165 INFO    SystemMonitor:35044 [interfaces.py:start():190] Started memory monitoring
+2026-04-16 13:22:30,177 INFO    SystemMonitor:35044 [interfaces.py:start():190] Started network monitoring
+2026-04-16 13:22:30,191 DEBUG   HandlerThread:35044 [system_info.py:_probe_git():135] Probing git
+2026-04-16 13:22:30,560 DEBUG   HandlerThread:35044 [system_info.py:_probe_git():143] Probing git done
+2026-04-16 13:22:30,560 DEBUG   HandlerThread:35044 [system_info.py:probe():198] Probing system done
+2026-04-16 13:22:30,560 DEBUG   HandlerThread:35044 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.26200-SP0', 'python': '3.11.7', 'heartbeatAt': '2026-04-16T17:22:30.163569', 'startedAt': '2026-04-16T17:22:26.383754', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '<python with no main file>', 'codePathLocal': None, 'git': {'remote': 'https://github.com/ctrazona1385/DS_Capstone_Group_1.git', 'commit': 'b0741246cbac2f863f90952b9c1845a3774ea7ed'}, 'email': 'ctrazona1385@gmail.com', 'root': 'C:/Users/17063/OneDrive/Documents/GitHub/DS_Capstone_Group_1', 'host': 'CJsLaptop', 'username': '17063', 'executable': 'c:\\Users\\17063\\anaconda3\\python.exe', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2918.0, 'min': 0.0, 'max': 2918.0}, 'cpu_freq_per_core': [{'current': 2918.0, 'min': 0.0, 'max': 2918.0}], 'disk': {'/': {'total': 458.37304306030273, 'used': 306.32811737060547}}, 'memory': {'total': 15.744903564453125}}
+2026-04-16 13:22:30,560 INFO    HandlerThread:35044 [system_monitor.py:probe():224] Finished collecting system info
+2026-04-16 13:22:30,560 INFO    HandlerThread:35044 [system_monitor.py:probe():227] Publishing system info
+2026-04-16 13:22:30,562 DEBUG   HandlerThread:35044 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2026-04-16 13:22:31,498 INFO    Thread-31 :35044 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\conda-environment.yaml
+2026-04-16 13:22:45,575 ERROR   HandlerThread:35044 [system_info.py:_save_conda():221] Error saving conda packages: Command '['conda', 'env', 'export']' timed out after 15 seconds
+Traceback (most recent call last):
+  File "c:\Users\17063\anaconda3\Lib\site-packages\wandb\sdk\internal\system\system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "c:\Users\17063\anaconda3\Lib\subprocess.py", line 391, in call
+    return p.wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\17063\anaconda3\Lib\subprocess.py", line 1264, in wait
+    return self._wait(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\17063\anaconda3\Lib\subprocess.py", line 1591, in _wait
+    raise TimeoutExpired(self.args, timeout)
+subprocess.TimeoutExpired: Command '['conda', 'env', 'export']' timed out after 15 seconds
+2026-04-16 13:22:45,583 DEBUG   HandlerThread:35044 [system_info.py:_save_conda():222] Saving conda packages done
+2026-04-16 13:22:45,586 INFO    HandlerThread:35044 [system_monitor.py:probe():229] Finished publishing system info
+2026-04-16 13:22:45,586 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: status_report
+2026-04-16 13:22:45,586 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: keepalive
+2026-04-16 13:22:45,587 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: status_report
+2026-04-16 13:22:45,587 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: keepalive
+2026-04-16 13:22:45,587 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: status_report
+2026-04-16 13:22:45,588 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: keepalive
+2026-04-16 13:22:45,589 DEBUG   SenderThread:35044 [sender.py:send():379] send: files
+2026-04-16 13:22:45,589 INFO    SenderThread:35044 [sender.py:_save_file():1390] saving file wandb-metadata.json with policy now
+2026-04-16 13:22:45,618 INFO    Thread-31 :35044 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\wandb-metadata.json
+2026-04-16 13:22:46,712 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: python_packages
+2026-04-16 13:22:46,713 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: python_packages
+2026-04-16 13:22:46,714 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: stop_status
+2026-04-16 13:22:46,715 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: stop_status
+2026-04-16 13:22:46,717 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-16 13:22:46,718 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-16 13:22:46,890 DEBUG   SenderThread:35044 [sender.py:send():379] send: telemetry
+2026-04-16 13:22:46,891 DEBUG   SenderThread:35044 [sender.py:send():379] send: history
+2026-04-16 13:22:46,891 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: summary_record
+2026-04-16 13:22:46,896 INFO    SenderThread:35044 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-16 13:22:46,897 DEBUG   SenderThread:35044 [sender.py:send():379] send: config
+2026-04-16 13:22:47,024 INFO    wandb-upload_0:35044 [upload_job.py:push():131] Uploaded file C:\Users\17063\AppData\Local\Temp\tmp6_u6dsnxwandb\8d4xwle6-wandb-metadata.json
+2026-04-16 13:22:47,643 INFO    Thread-31 :35044 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\requirements.txt
+2026-04-16 13:22:47,644 INFO    Thread-31 :35044 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\wandb-summary.json
+2026-04-16 13:22:47,905 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: status_report
+2026-04-16 13:22:48,709 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: log_artifact
+2026-04-16 13:22:48,710 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: log_artifact
+2026-04-16 13:22:48,782 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: partial_history
+2026-04-16 13:22:49,496 INFO    wandb-upload_0:35044 [upload_job.py:push():89] Uploaded file C:\Users\17063\AppData\Local\wandb\wandb\artifacts\staging\tmp3i7j1_n6
+2026-04-16 13:22:49,656 INFO    Thread-31 :35044 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\media\table\roc_curve_table_1_7877958cdc7192a8e8f1.table.json
+2026-04-16 13:22:49,658 INFO    Thread-31 :35044 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\media
+2026-04-16 13:22:49,659 INFO    Thread-31 :35044 [dir_watcher.py:_on_file_created():271] file/dir created: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\media\table
+2026-04-16 13:22:49,796 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: poll_exit
+2026-04-16 13:22:50,240 INFO    SenderThread:35044 [sender.py:send_request_log_artifact():1456] logged artifact run-k3tr0ffl-roc_curve_table - {'id': 'QXJ0aWZhY3Q6MjcyMDA2NTgxNQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEwMTA4NTgzMjk=', 'latestArtifact': None}}
+2026-04-16 13:22:50,242 DEBUG   SenderThread:35044 [sender.py:send():379] send: files
+2026-04-16 13:22:50,242 INFO    SenderThread:35044 [sender.py:_save_file():1390] saving file media\table\roc_curve_table_1_7877958cdc7192a8e8f1.table.json with policy now
+2026-04-16 13:22:50,245 DEBUG   SenderThread:35044 [sender.py:send():379] send: history
+2026-04-16 13:22:50,246 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: summary_record
+2026-04-16 13:22:50,248 INFO    SenderThread:35044 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-16 13:22:50,249 DEBUG   SenderThread:35044 [sender.py:send():379] send: telemetry
+2026-04-16 13:22:50,250 DEBUG   SenderThread:35044 [sender.py:send():379] send: exit
+2026-04-16 13:22:50,250 INFO    SenderThread:35044 [sender.py:send_exit():586] handling exit code: 0
+2026-04-16 13:22:50,250 INFO    SenderThread:35044 [sender.py:send_exit():588] handling runtime: 18
+2026-04-16 13:22:50,253 INFO    SenderThread:35044 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-16 13:22:50,254 INFO    SenderThread:35044 [sender.py:send_exit():594] send defer
+2026-04-16 13:22:50,254 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: poll_exit
+2026-04-16 13:22:50,255 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:50,255 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 0
+2026-04-16 13:22:50,256 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:50,256 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 0
+2026-04-16 13:22:50,257 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 1
+2026-04-16 13:22:50,257 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:50,257 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 1
+2026-04-16 13:22:50,258 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:50,258 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 1
+2026-04-16 13:22:50,258 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 2
+2026-04-16 13:22:50,258 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:50,258 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 2
+2026-04-16 13:22:50,258 INFO    HandlerThread:35044 [system_monitor.py:finish():203] Stopping system monitor
+2026-04-16 13:22:50,259 DEBUG   SystemMonitor:35044 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2026-04-16 13:22:50,259 DEBUG   SystemMonitor:35044 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2026-04-16 13:22:50,260 INFO    HandlerThread:35044 [interfaces.py:finish():202] Joined cpu monitor
+2026-04-16 13:22:50,260 DEBUG   SystemMonitor:35044 [system_monitor.py:_start():183] Publishing last batch of metrics
+2026-04-16 13:22:50,260 INFO    HandlerThread:35044 [interfaces.py:finish():202] Joined disk monitor
+2026-04-16 13:22:50,262 INFO    HandlerThread:35044 [interfaces.py:finish():202] Joined memory monitor
+2026-04-16 13:22:50,263 INFO    HandlerThread:35044 [interfaces.py:finish():202] Joined network monitor
+2026-04-16 13:22:50,264 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:50,264 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 2
+2026-04-16 13:22:50,264 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 3
+2026-04-16 13:22:50,264 DEBUG   SenderThread:35044 [sender.py:send():379] send: stats
+2026-04-16 13:22:50,264 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:50,265 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 3
+2026-04-16 13:22:50,265 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:50,266 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 3
+2026-04-16 13:22:50,266 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 4
+2026-04-16 13:22:50,266 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:50,266 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 4
+2026-04-16 13:22:50,266 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:50,267 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 4
+2026-04-16 13:22:50,267 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 5
+2026-04-16 13:22:50,267 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:50,267 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 5
+2026-04-16 13:22:50,268 DEBUG   SenderThread:35044 [sender.py:send():379] send: summary
+2026-04-16 13:22:50,270 INFO    SenderThread:35044 [sender.py:_save_file():1390] saving file wandb-summary.json with policy end
+2026-04-16 13:22:50,270 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:50,270 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 5
+2026-04-16 13:22:50,270 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 6
+2026-04-16 13:22:50,271 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:50,271 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 6
+2026-04-16 13:22:50,271 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:50,271 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 6
+2026-04-16 13:22:50,275 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: status_report
+2026-04-16 13:22:50,499 INFO    wandb-upload_0:35044 [upload_job.py:push():131] Uploaded file C:\Users\17063\AppData\Local\Temp\tmp6_u6dsnxwandb\p4p847ev-media/table/roc_curve_table_1_7877958cdc7192a8e8f1.table.json
+2026-04-16 13:22:50,665 INFO    Thread-31 :35044 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\wandb-summary.json
+2026-04-16 13:22:50,802 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: poll_exit
+2026-04-16 13:22:50,891 INFO    wandb-upload_0:35044 [upload_job.py:push():131] Uploaded file C:\Users\17063\AppData\Local\Temp\tmp6_u6dsnxwandb\t8yf3z92-media/table/roc_curve_table_1_7877958cdc7192a8e8f1.table.json
+2026-04-16 13:22:51,873 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 7
+2026-04-16 13:22:51,874 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: poll_exit
+2026-04-16 13:22:51,874 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:51,874 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 7
+2026-04-16 13:22:51,874 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:51,874 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 7
+2026-04-16 13:22:51,875 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 8
+2026-04-16 13:22:51,875 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:51,875 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 8
+2026-04-16 13:22:51,875 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:51,875 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 8
+2026-04-16 13:22:51,876 INFO    SenderThread:35044 [job_builder.py:build():318] Attempting to build job artifact
+2026-04-16 13:22:51,877 INFO    SenderThread:35044 [job_builder.py:_get_source_type():455] is repo sourced job
+2026-04-16 13:22:51,878 INFO    SenderThread:35044 [job_builder.py:_get_program_relpath():473] run is notebook based run
+2026-04-16 13:22:51,878 WARNING SenderThread:35044 [job_builder.py:_log_if_verbose():210] Source type is set to 'repo' but some required information is missing from the environment. A job will not be created from this run. See https://docs.wandb.ai/guides/launch/create-job
+2026-04-16 13:22:51,878 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 9
+2026-04-16 13:22:51,879 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:51,879 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 9
+2026-04-16 13:22:51,879 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:51,879 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 9
+2026-04-16 13:22:51,879 INFO    SenderThread:35044 [dir_watcher.py:finish():358] shutting down directory watcher
+2026-04-16 13:22:52,677 INFO    SenderThread:35044 [dir_watcher.py:_on_file_modified():288] file/dir modified: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\config.yaml
+2026-04-16 13:22:52,678 INFO    SenderThread:35044 [dir_watcher.py:finish():388] scan: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files
+2026-04-16 13:22:52,679 INFO    SenderThread:35044 [dir_watcher.py:finish():402] scan save: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\conda-environment.yaml conda-environment.yaml
+2026-04-16 13:22:52,680 INFO    SenderThread:35044 [dir_watcher.py:finish():402] scan save: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\config.yaml config.yaml
+2026-04-16 13:22:52,681 INFO    SenderThread:35044 [dir_watcher.py:finish():402] scan save: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\requirements.txt requirements.txt
+2026-04-16 13:22:52,687 INFO    SenderThread:35044 [dir_watcher.py:finish():402] scan save: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\wandb-metadata.json wandb-metadata.json
+2026-04-16 13:22:52,688 INFO    SenderThread:35044 [dir_watcher.py:finish():402] scan save: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\wandb-summary.json wandb-summary.json
+2026-04-16 13:22:52,700 INFO    SenderThread:35044 [dir_watcher.py:finish():402] scan save: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\media\table\roc_curve_table_1_7877958cdc7192a8e8f1.table.json media/table/roc_curve_table_1_7877958cdc7192a8e8f1.table.json
+2026-04-16 13:22:52,701 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 10
+2026-04-16 13:22:52,702 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:52,702 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 10
+2026-04-16 13:22:52,702 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:52,702 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 10
+2026-04-16 13:22:52,702 INFO    SenderThread:35044 [file_pusher.py:finish():172] shutting down file pusher
+2026-04-16 13:22:52,813 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: poll_exit
+2026-04-16 13:22:52,814 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: poll_exit
+2026-04-16 13:22:52,911 INFO    wandb-upload_1:35044 [upload_job.py:push():131] Uploaded file c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\requirements.txt
+2026-04-16 13:22:53,815 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: poll_exit
+2026-04-16 13:22:53,816 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: poll_exit
+2026-04-16 13:22:54,251 INFO    wandb-upload_0:35044 [upload_job.py:push():131] Uploaded file c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\config.yaml
+2026-04-16 13:22:54,301 INFO    wandb-upload_2:35044 [upload_job.py:push():131] Uploaded file c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\files\wandb-summary.json
+2026-04-16 13:22:54,503 INFO    Thread-30 (_thread_body):35044 [sender.py:transition_state():614] send defer: 11
+2026-04-16 13:22:54,504 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:54,504 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 11
+2026-04-16 13:22:54,505 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:54,505 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 11
+2026-04-16 13:22:54,505 INFO    SenderThread:35044 [file_pusher.py:join():178] waiting for file pusher
+2026-04-16 13:22:54,510 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 12
+2026-04-16 13:22:54,510 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:54,510 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 12
+2026-04-16 13:22:54,511 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:54,511 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 12
+2026-04-16 13:22:54,511 INFO    SenderThread:35044 [file_stream.py:finish():614] file stream finish called
+2026-04-16 13:22:54,793 INFO    SenderThread:35044 [file_stream.py:finish():618] file stream finish is done
+2026-04-16 13:22:54,793 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 13
+2026-04-16 13:22:54,793 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:54,793 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 13
+2026-04-16 13:22:54,793 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:54,793 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 13
+2026-04-16 13:22:54,793 INFO    SenderThread:35044 [sender.py:transition_state():614] send defer: 14
+2026-04-16 13:22:54,794 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: defer
+2026-04-16 13:22:54,794 DEBUG   SenderThread:35044 [sender.py:send():379] send: final
+2026-04-16 13:22:54,794 INFO    HandlerThread:35044 [handler.py:handle_request_defer():172] handle defer: 14
+2026-04-16 13:22:54,794 DEBUG   SenderThread:35044 [sender.py:send():379] send: footer
+2026-04-16 13:22:54,795 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: defer
+2026-04-16 13:22:54,795 INFO    SenderThread:35044 [sender.py:send_request_defer():610] handle sender defer: 14
+2026-04-16 13:22:54,797 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: poll_exit
+2026-04-16 13:22:54,797 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: poll_exit
+2026-04-16 13:22:54,799 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: internal_messages
+2026-04-16 13:22:54,801 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: server_info
+2026-04-16 13:22:54,801 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: get_summary
+2026-04-16 13:22:54,802 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: sampled_history
+2026-04-16 13:22:54,803 DEBUG   SenderThread:35044 [sender.py:send_request():406] send_request: server_info
+2026-04-16 13:22:54,872 DEBUG   HandlerThread:35044 [handler.py:handle_request():146] handle_request: shutdown
+2026-04-16 13:22:54,873 INFO    HandlerThread:35044 [handler.py:finish():866] shutting down handler
+2026-04-16 13:22:55,812 INFO    WriterThread:35044 [datastore.py:close():296] close: c:\Users\17063\OneDrive\Documents\GitHub\DS_Capstone_Group_1\wandb\run-20260416_132226-k3tr0ffl\run-k3tr0ffl.wandb
+2026-04-16 13:22:55,875 INFO    SenderThread:35044 [sender.py:finish():1546] shutting down sender
+2026-04-16 13:22:55,875 INFO    SenderThread:35044 [file_pusher.py:finish():172] shutting down file pusher
+2026-04-16 13:22:55,875 INFO    SenderThread:35044 [file_pusher.py:join():178] waiting for file pusher
