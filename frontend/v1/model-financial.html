@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Viability | Care Optimize</title>
+    <style>
+        :root { --sidebar-width: 260px; --primary: #1a3a5f; --accent: #27ae60; --bg: #f8f9fa; --text: #2c3e50; }
+        body { font-family: 'Inter', sans-serif; margin: 0; display: flex; background: var(--bg); }
+        .sidebar { width: var(--sidebar-width); height: 100vh; background: var(--primary); color: white; position: fixed; padding: 1.5rem; box-sizing: border-box; }
+        .sidebar a { color: #ecf0f1; text-decoration: none; display: block; padding: 8px; margin-bottom: 5px; }
+        .main-content { margin-left: var(--sidebar-width); flex-grow: 1; padding: 2rem; }
+        .content-card { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 1000px; margin: 0 auto; }
+        h1 { color: var(--primary); }
+        .flourish-placeholder { background: #eee; border: 2px dashed #ccc; height: 500px; display: flex; align-items: center; justify-content: center; margin: 2rem 0; }
+    </style>
+</head>
+<body>
+
+<aside class="sidebar">
+    <a href="index.html"><strong>← Back to Hub</strong></a>
+    <hr style="opacity: 0.1; margin: 1rem 0;">
+    <a href="model-hpsa.html">HPSA Classification</a>
+    <a href="model-impact.html">Health Impact</a>
+    <a href="model-financial.html" style="color: var(--accent); background: rgba(255,255,255,0.1);">Financial Viability</a>
+    <a href="model-gonogo.html">Go/No-Go Dashboard</a>
+</aside>
+
+<main class="main-content">
+    <div class="content-card">
+        <h1>Financial Viability Model</h1>
+        <p>Estimating revenue potential and operating costs to ensure solo practices remain sustainable.</p>
+        
+        <h3>Inputs</h3>
+        <ul>
+            <li><strong>Lease Costs:</strong> GSA commercial rate data by county.</li>
+            <li><strong>Patient Panels:</strong> 300–600 patients at $50–$100/month.</li>
+            <li><strong>Breakeven:</strong> Estimated at ~$250K/year.</li>
+        </ul>
+
+        <h3>Methodology</h3>
+        <p>The model runs 1,000 Monte Carlo simulations per county to produce a probability distribution over revenue outcomes rather than a single point estimate.</p>
+
+        <div class="flourish-placeholder">
+            [ Flourish Interactive Map: Revenue & Profitability Probabilities ]
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

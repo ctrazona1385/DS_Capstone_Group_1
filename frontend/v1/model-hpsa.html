@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HPSA Classification | Care Optimize</title>
+    <link rel="stylesheet" href="style.css"> <!-- You can extract CSS to a style.css for cleaner code -->
+    <style>
+        :root { --sidebar-width: 260px; --primary: #1a3a5f; --accent: #27ae60; --bg: #f8f9fa; --text: #2c3e50; }
+        body { font-family: 'Inter', sans-serif; margin: 0; display: flex; background: var(--bg); }
+        .sidebar { width: var(--sidebar-width); height: 100vh; background: var(--primary); color: white; position: fixed; padding: 1.5rem; box-sizing: border-box; }
+        .sidebar a { color: #ecf0f1; text-decoration: none; display: block; padding: 8px; margin-bottom: 5px; }
+        .main-content { margin-left: var(--sidebar-width); flex-grow: 1; padding: 2rem; }
+        .content-card { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 1000px; margin: 0 auto; }
+        h1 { color: var(--primary); }
+        .flourish-placeholder { background: #eee; border: 2px dashed #ccc; height: 500px; display: flex; align-items: center; justify-content: center; margin: 2rem 0; text-align: center; }
+    </style>
+</head>
+<body>
+
+<aside class="sidebar">
+    <a href="index.html"><strong>← Back to Hub</strong></a>
+    <hr style="opacity: 0.1; margin: 1rem 0;">
+    <a href="model-hpsa.html" style="color: var(--accent); background: rgba(255,255,255,0.1);">HPSA Classification</a>
+    <a href="model-impact.html">Health Impact</a>
+    <a href="model-financial.html">Financial Viability</a>
+    <a href="model-gonogo.html">Go/No-Go Dashboard</a>
+</aside>
+
+<main class="main-content">
+    <div class="content-card">
+        <h1>HPSA Need Classification</h1>
+        <p>This ML model predicts if a non-HPSA-designated tract would qualify as "High Need" (score ≥ 14) if formally evaluated.</p>
+        
+        <h3>Inputs & Features</h3>
+        <p>Uninsured rate, no-checkup rate, median income, poverty rate, and PCP density per 100k population.</p>
+        
+        <h3>Model Design</h3>
+        <p>We utilized a <strong>GroupShuffleSplit</strong> by county to prevent data leakage and addressed a 1:7.7 class imbalance using <strong>SMOTE</strong> and <strong>XGBoost</strong> with Optuna tuning.</p>
+
+        <div class="flourish-placeholder">
+            [ Flourish Interactive Map: HPSA Classification Results ]
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

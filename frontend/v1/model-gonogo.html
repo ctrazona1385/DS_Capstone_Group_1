@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go/No-Go Dashboard | Care Optimize</title>
+    <style>
+        :root { --sidebar-width: 260px; --primary: #1a3a5f; --accent: #27ae60; --bg: #f8f9fa; --text: #2c3e50; --go-color: #27ae60; --conditional-color: #f39c12; --nogo-color: #c0392b; }
+        body { font-family: 'Inter', sans-serif; margin: 0; display: flex; background: var(--bg); }
+        .sidebar { width: var(--sidebar-width); height: 100vh; background: var(--primary); color: white; position: fixed; padding: 1.5rem; box-sizing: border-box; }
+        .sidebar a { color: #ecf0f1; text-decoration: none; display: block; padding: 8px; margin-bottom: 5px; }
+        .main-content { margin-left: var(--sidebar-width); flex-grow: 1; padding: 2rem; }
+        .content-card { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 1000px; margin: 0 auto; }
+        h1 { color: var(--primary); }
+        
+        .tier-legend { display: flex; gap: 15px; margin: 1.5rem 0; }
+        .tier-item { display: flex; align-items: center; font-size: 0.9rem; font-weight: 600; }
+        .dot { height: 12px; width: 12px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+
+        .flourish-placeholder { background: #eee; border: 2px dashed #ccc; height: 600px; display: flex; align-items: center; justify-content: center; margin: 2rem 0; }
+    </style>
+</head>
+<body>
+
+<aside class="sidebar">
+    <a href="index.html"><strong>← Back to Hub</strong></a>
+    <hr style="opacity: 0.1; margin: 1rem 0;">
+    <a href="model-hpsa.html">HPSA Classification</a>
+    <a href="model-impact.html">Health Impact</a>
+    <a href="model-financial.html">Financial Viability</a>
+    <a href="model-gonogo.html" style="color: var(--accent); background: rgba(255,255,255,0.1);">Go/No-Go Dashboard</a>
+</aside>
+
+<main class="main-content">
+    <div class="content-card">
+        <h1>Final Siting Recommendations</h1>
+        <p>This interactive dashboard synthesizes the HPSA need classification and financial viability models into filterable siting recommendations using an SVM Classifier.</p>
+        
+        <div class="tier-legend">
+            <div class="tier-item"><span class="dot" style="background: var(--go-color);"></span> Strong Go</div>
+            <div class="tier-item"><span class="dot" style="background: var(--conditional-color);"></span> Conditional</div>
+            <div class="tier-item"><span class="dot" style="background: var(--nogo-color);"></span> No Go</div>
+        </div>
+
+        <section>
+            <h3>Recommendation Logic</h3>
+            <ul>
+                <li><strong>Strong Go:</strong> High-need HPSA classification + positive revenue projection.</li>
+                <li><strong>Conditional:</strong> Moderate need or marginal financial viability; requires local assessment.</li>
+                <li><strong>No Go:</strong> Insufficient community demand or projected negative margins.</li>
+            </ul>
+        </section>
+
+        <!-- FLOURISH EMBED SPACE -->
+        <div class="flourish-placeholder">
+            <div>
+                <p><strong>[ Flourish Final Recommendation Map ]</strong></p>
+                <small>Use a "Points" or "Choropleth" map to show Go/No-Go Tiers</small>
+            </div>
+        </div>
+
+        <section>
+            <h3>How to use this dashboard</h3>
+            <p>Users can filter by county or census tract to identify high-priority areas where a DPC clinic would have the highest impact on underserved populations while maintaining long-term financial health.</p>
+        </section>
+    </div>
+</main>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care Optimize | Project Hub</title>
+    <style>
+        :root { --sidebar-width: 260px; --primary: #1a3a5f; --accent: #27ae60; --bg: #f8f9fa; --text: #2c3e50; }
+        body { font-family: 'Inter', system-ui, sans-serif; margin: 0; display: flex; background: var(--bg); color: var(--text); }
+        .sidebar { width: var(--sidebar-width); height: 100vh; background: var(--primary); color: white; position: fixed; padding: 1.5rem; box-sizing: border-box; }
+        .sidebar h2 { font-size: 1.1rem; text-transform: uppercase; color: #95a5a6; margin-bottom: 1.5rem; }
+        .sidebar ul { list-style: none; padding: 0; }
+        .sidebar li { margin-bottom: 0.8rem; }
+        .sidebar a { color: #ecf0f1; text-decoration: none; font-size: 0.95rem; display: block; padding: 8px; border-radius: 4px; }
+        .sidebar a.active { background: rgba(255,255,255,0.1); color: var(--accent); }
+        .main-content { margin-left: var(--sidebar-width); flex-grow: 1; padding: 2rem; }
+        .content-card { background: white; padding: 2.5rem; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); max-width: 1000px; margin: 0 auto; }
+        h1 { color: var(--primary); margin-top: 0; }
+        h2 { color: var(--primary); border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 2rem; }
+        .pipeline-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.9rem; }
+        .pipeline-table th, .pipeline-table td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        .pipeline-table th { background-color: #f2f2f2; }
+        @media (max-width: 768px) { body { flex-direction: column; } .sidebar { width: 100%; height: auto; position: relative; } .main-content { margin-left: 0; } }
+    </style>
+</head>
+<body>
+
+<aside class="sidebar">
+    <h2>Care Optimize</h2>
+    <ul>
+        <li><a href="index.html" class="active">Project Overview</a></li>
+        <li><a href="model-hpsa.html">HPSA Classification</a></li>
+        <li><a href="model-impact.html">Health Impact</a></li>
+        <li><a href="model-financial.html">Financial Viability</a></li>
+        <li><a href="model-gonogo.html">Go/No-Go Dashboard</a></li>
+    </ul>
+</aside>
+
+<main class="main-content">
+    <div class="content-card">
+        <h1>Care Optimize</h1>
+        <p><strong>A Data-Driven DPC Clinic Siting Model</strong><br>
+        DSCI 4350 - Spring 2026 | Trazona, Finn, Moore, McGee</p>
+
+        <section>
+            <h2>Executive Summary</h2>
+            <p>Care Optimize identifies optimal locations for Direct Primary Care (DPC) clinic placement across U.S. counties. By balancing community need against financial viability, the model produces Go/No-Go recommendations to address primary care "deserts" and physician maldistribution.</p>
+        </section>
+
+        <section>
+            <h2>Data Pipeline & Engineering</h2>
+            <p>The pipeline processes raw government data into a merged file of 71,507 tracts using zero-padded FIPS codes as join keys.</p>
+            <table class="pipeline-table">
+                <thead>
+                    <tr><th>Notebook</th><th>Description</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>census_data_call.ipynb</td><td>Pulls ACS 5-year county estimates via Census API</td></tr>
+                    <tr><td>CDC_tract_imputation.ipynb</td><td>Imputes missing BP and cholesterol at tract level</td></tr>
+                    <tr><td>data_merging.ipynb</td><td>Left-joins all sources (71,507 tracts, 20 columns)</td></tr>
+                    <tr><td>Financial_Modeling.ipynb</td><td>Processes GSA lease data and revenue projections</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Data Sources</h2>
+            <ul>
+                <li><strong>Census ACS:</strong> Uninsured rates and demographics.</li>
+                <li><strong>Census SAIPE:</strong> Poverty and median income (preferred for small geographies).</li>
+                <li><strong>HRSA AHRF:</strong> Primary care provider (PCP) counts.</li>
+                <li><strong>CDC PLACES:</strong> Chronic disease prevalence (Diabetes, BP, etc.).</li>
+            </ul>
+        </section>
+    </div>
+</main>
+
+</body>
+</html>
