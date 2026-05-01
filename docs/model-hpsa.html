@@ -36,7 +36,7 @@
         <p>Uninsured rate, no-checkup rate, median income, poverty rate, and PCP density per 100k population.</p>
         
         <h3>Model Design</h3>
-        <p>We utilized a <strong>GroupShuffleSplit</strong> by county to prevent data leakage and addressed a 1:7.7 class imbalance using <strong>SMOTE</strong> and <strong>XGBoost</strong> with Optuna tuning.</p>
+        <p>Addressed a 1:7.7 class imbalance using <strong>SMOTE</strong> and <strong>Logistic Regression</strong> with GridSearch Hyperparameter tuning.</p>
 
         <h3>HPSA Scale</h3>
         <p>0: non-HPSA low need, 1: HPSA Designated low need, 2: non-HPSA high need, 3: HPSA Designated high need,</p>
